@@ -1,5 +1,5 @@
 # Java Stdin and Stdout I - level: Easy, language: Java
-> Java Stdin and Stdout I in Hackerrank (https://www.hackerrank.com/challenges/fizzbuzz/problem).
+> Java Stdin and Stdout I in Hackerrank (https://www.hackerrank.com/challenges/java-stdin-and-stdout-1/problem).
 
 
 ## Description of the problem
@@ -18,9 +18,12 @@ The code above creates a Scanner object named  and uses it to read a String and 
 It then closes the Scanner object because there is no more input to read, and prints to stdout using System.out.println(String).
 So, if our input is:
 > Hi 5
+
 Our code will print:
+
 > myString is: Hi
 > myInt is: 5
+
 Alternatively, you can use the BufferedReader class.
 
 ### Task
