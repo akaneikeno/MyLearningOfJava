@@ -1,29 +1,25 @@
-//import java.io.*;
-//import java.util.*;
+import java.util.Scanner;
 
 public class Solution {
 
     public static void main(String[] args) {
-        /* Enter your code here.
-           Print output to STDOUT.
-           Your class should be named Solution.
-        */
-        for(int i = 1; i<=100; i++){
-            System.out.println(fizzBuzz(i));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("================================");
+        for (int i = 0; i < 3; i++) {
+            String s1 = sc.next();
+            int x = sc.nextInt();
+
+            /*
+             * Tips: %: start of format specifier
+             *       -: pad ending characters with spaces
+             *       s: String
+             *       0: pad leading digits with zeroes
+             *       d: decimal
+             *       n: new line
+             */
+            System.out.printf("%-15s%03d%n", s1, x);
         }
-    }
-    
-    public static String fizzBuzz(int num){
-        String res = "";
-        if(num % 3==0){
-            res = "Fizz";
-        }
-        if(num % 5==0){
-            res += "Buzz";
-        }
-        if(res==""){
-            res = Integer.toString(num);
-        }        
-        return res;
+        System.out.println("================================");
+        sc.close();
     }
 }

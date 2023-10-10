@@ -1,45 +1,34 @@
-# FizzBuzz - level: Easy, language: Java
-> FizzBuzz in Hackerrank (https://www.hackerrank.com/challenges/fizzbuzz/problem).
+# Java Output Formatting - level: Easy, language: Java
+> Java Output Formatting in Hackerrank (https://www.hackerrank.com/challenges/java-output-formatting/problem).
 
 
 ## Description of the problem
-Most HackerRank challenges require you to read input from stdin (standard input) and write output to stdout (standard output).
-One popular way to read input from stdin is by using the Scanner class and specifying the Input Stream as System.in.
-For example:
-> Scanner scanner = new Scanner(System.in);
-> String myString = scanner.next();
-> int myInt = scanner.nextInt();
-> scanner.close();
-> 
-> System.out.println("myString is: " + myString);
-> System.out.println("myInt is: " + myInt);
+Java's System.out.printf function can be used to print formatted output.
+The purpose of this exercise is to test your understanding of formatting output using printf.
 
-The code above creates a Scanner object named  and uses it to read a String and an int.
-It then closes the Scanner object because there is no more input to read, and prints to stdout using System.out.println(String).
-So, if our input is:
-> Hi 5
-
-Our code will print:
-
-> myString is: Hi
-> myInt is: 5
-
-Alternatively, you can use the BufferedReader class.
-
-### Task
-In this challenge, you must read  integers from stdin and then print them to stdout.
-Each integer must be printed on a new line.
-To make the problem a little easier, a portion of the code is provided for you in the editor below.
+To get you started, a portion of the solution is provided for you in the editor; you must format and print the input to complete the solution.
 
 ### Imput Format
-There are 3 lines of input, and each line contains a single integer.
+Every line of input will contain a String followed by an integer.
+Each String will have a maximum of 10 alphabetic characters, and each integer will be in the inclusive range from 0 to 999.
+
+### Output Format
+In each line of output there should be two columns:
+The first column contains the String and is left justified using exactly 15 characters.
+The second column contains the integer, expressed in exactly 3 digits; if the original input has less than three digits, you must pad your output's leading digits with zeroes.
 
 ### Sample Input
-> 42
-> 100
-> 125
+> java 100
+> cpp 65
+> python 50
 
 ### Sample Output
-> 42
-> 100
-> 125
+> ================================
+> java           100 
+> cpp            065 
+> python         050 
+> ================================
+
+### Explanation
+Each String is left-justified with trailing whitespace through the first 15 characters.
+The leading digit of the integer is the 16th character, and each integer that was less than 3 digits now has leading zeroes.
