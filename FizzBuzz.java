@@ -5,10 +5,10 @@
  * For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
  */
 
-import java.io.*;
-import java.util.*;
+//import java.io.*;
+//import java.util.*;
 
-public class Solution {
+public class FizzBuzz {
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
