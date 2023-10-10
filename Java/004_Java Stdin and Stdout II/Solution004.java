@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
-public class Solution {
+public class Solution004 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int i = scan.nextInt();
+        
+        // Enter your code here.
         double d = scan.nextDouble();
 
         /*

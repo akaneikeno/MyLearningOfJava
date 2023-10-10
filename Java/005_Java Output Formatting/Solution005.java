@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution {
+public class Solution005 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -8,6 +8,7 @@ public class Solution {
         for (int i = 0; i < 3; i++) {
             String s1 = sc.next();
             int x = sc.nextInt();
+            // Complete this line
 
             /*
              * Tips: %: start of format specifier
