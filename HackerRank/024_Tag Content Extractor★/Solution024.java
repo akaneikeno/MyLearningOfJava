@@ -13,9 +13,25 @@ public class Solution024{
 			String line = in.nextLine();
 			
           	//Write your code here
-			
+			if(countChar(line, "<")!=countChar(line, ">") || countChar(line, "<")/2!=countChar(line, "<//")){
+				System.out.println("none");
+				break;
+			}else{
+
+			}			
 			testCases--;
 		}
         in.close();
+	}
+
+	public static int countChar(String str, String ch){		
+		String[] array = str.split("");
+		int count = 0;
+		for (String s: array) {
+			if(s.equals(ch)){
+				count++;
+			}
+        }
+		return count;
 	}
 }
