@@ -13,12 +13,13 @@ According to the policy, a username is considered valid if all the following con
 * The first character of the username must be an alphabetic character, i.e., either lowercase character [a-z] or uppercase character [A-Z].
 
 For example:
->   Username       | Length | Validity
-> * Julia          |      5 | INVALID; Username length < 8 characters
-> * Samantha       |      8 | VALID
-> * Samantha_21    |     11 | VALID
-> * 1Samantha      |      9 | NVALID; Username begins with non-alphabetic character
-> * Samantha_10_2A |     14 | INVALID; '?' character not allowed
+| Username       | Length | Validity                                              |
+|:---------------|-------:|:------------------------------------------------------|
+| Julia          |      5 | INVALID; Username length < 8 characters               |
+| Samantha       |      8 | VALID                                                 |
+| Samantha_21    |     11 | VALID                                                 |
+| 1Samantha      |      9 | NVALID; Username begins with non-alphabetic character |
+| Samantha_10_2A |     14 | INVALID; '?' character not allowed                    |
 
 Update the value of regularExpression field in the UsernameValidator class so that the regular expression only matches with valid usernames.
 

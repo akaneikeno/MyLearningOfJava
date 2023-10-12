@@ -1,52 +1,68 @@
 # Java 1D Array (Part 2) - level: Medium, language: Java
-> Java 1D Array (Part 2) in Hackerrank (https://www.hackerrank.com/challenges/java-datatypes/problem).
+> Java 1D Array (Part 2) in Hackerrank (https://www.hackerrank.com/challenges/java-1d-array/problem).
 
 
 ## Description of the problem
-We use the integers a, b, and  to create the following series:
-> (a + 2^0 * b), (a + 2^0 * b + 2^1 * b), … , s(a + 2^0 * b + 2^1 * b + … + 2^n-1 * b)
+Let's play a game on an array!
+You're standing at index 0 of an n-element array named game.
+From some index  (where 0 ≦ i ≦ n), you can perform one of the following moves:
+* Move Backward: If cell i-1 exists and contains a zero, you can walk back to cell i-1.
+* Move Forward:
+  * If cell i+1 contains a zero, you can walk to cell i+1.
+  * If cell i+leap contains a zero, you can jump to cell i+leap.
+  * If you're standing in cell n-1 or the value of n≦i+leap, you can walk or jump off the end of the array and win the game.
 
-You are given q queries in the form of a, b, and n.
-For each query, print the series corresponding to the given a, b, and n values as a single line of  space-separated integers.
+In other words, you can move from index n-1 to index i+1, i-1, or i+leap as long as the destination index is a cell containing a 0.
+If the destination index is greater than n-1, you win the game.
+
+### Function Description
+Complete the canWin function in the editor below.
+canWin has the following parameters:
+* int leap: the size of the leap
+* int game[n]: the array to traverse
+
+### Returns
+* boolean: true if the game can be won, otherwise false
 
 ### Imput Format
-The first line contains an integer, q, denoting the number of queries.
-Each line i of the q subsequent lines contains three space-separated integers describing the respective ai, bi, and ni values for that query.
+The first line contains an integer, q, denoting the number of queries (i.e., function calls).
+The 2*q subsequent lines describe each query over two lines:
+
+1. The first line contains two space-separated integers describing the respective values of n and leap.
+2. The second line contains n space-separated binary integers (i.e., zeroes and ones) describing the respective values of game0, game1, … , gamen-1.
 
 ### Constraints
-* 0 ≦ q ≦ 500
-* 0 ≦ a, b ≦ 50
-* 1 ≦ n ≦ 15
-
-### Output Format
-For each query, print the corresponding series on a new line. Each series must be printed in order as a single line of n space-separated integers.
+* 1 ≦ q ≦ 5000
+* 2 ≦ n ≦ 100
+* 0 ≦ leap ≦ 100
+* It is guaranteed that the value of game[0] is always 0.
 
 ### Sample Input
-> 2
-> 0 2 10
-> 5 3 5
+> STDIN           Function
+> -----           --------
+> 4               q = 4 (number of queries)
+> 5 3             game[] size n = 5, leap = 3 (first query)
+> 0 0 0 0 0       game = [0, 0, 0, 0, 0]
+> 6 5             game[] size n = 6, leap = 5 (second query)
+> 0 0 0 1 1 1     . . .
+> 6 3
+> 0 0 1 1 1 0
+> 3 1
+> 0 1 0
 
 ### Sample Output
-> 2 6 14 30 62 126 254 510 1022 2046
-> 8 14 26 50 98
+> YES
+> YES
+> NO
+> NO
 
 ### Explanation
-We have two queries:
-1. We use a=0, b=2, and n=10 to produce some series:
-> s0, s1, … , sn-1:
-> * s0 = 0 + 1*2 = 2
-> * s1 = 0 + 1*2 + 2*2 = 6
-> * s2 = 2 + 1*2 + 2*2 + 4*2 = 14
-
-… and so on.
-Once we hit n = 10, we print the first ten terms as a single line of space-separated integers.
-
-2. We use a=5, b=3, and n=5 to produce some series:
-> s0, s1, … , sn-1:
-> * s0 = 5 + 1*3 = 8
-> * s1 = 5 + 1*3 + 2*3 = 14
-> * s2 = 5 + 1*3 + 2*3 + 4*3 = 26
-> * s3 = 5 + 1*3 = 2*3 + 4*3 + 8*3 = 50
-> * s4 = 5 + 1*3 + 2*3 + 4*3 + 8*3 + 16*3 = 98
-
-We then print each element of our series as a single line of space-separated values.
+We perform the following 4 queries:
+1. For game=[0, 0, 0, 0, 0] and leap=3, we can walk and/or jump to the end of the array because every cell contains a 0.
+   Because we can win, we return true.
+2. For game=[0, 0, 0, 1, 1, 1] and leap=5, we can walk to index 1 and then jump i+leap = 1+5 = 6 units to the end of the array.
+   Because we can win, we return true.
+3. For game=[0, 0, 1, 1, 1, 0] and leap=3, there is no way for us to get past the three consecutive ones.
+   Because we cannot win, we return false.
+4. For game=[0, 1, 0] and leap=1, there is no way for us to get past the one at index .
+   Because we cannot win, we return false.

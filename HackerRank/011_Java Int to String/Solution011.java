@@ -14,7 +14,6 @@ public class Solution011 {
             String s = Integer.toString(n);
 
             // Write your code here
-
             if (n == Integer.parseInt(s)) {
                 System.out.println("Good job");
             } else {

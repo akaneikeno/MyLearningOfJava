@@ -1,16 +1,16 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
+// import java.io.*;
+// import java.math.*;
+// import java.security.*;
+// import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
+// import java.util.concurrent.*;
+// import java.util.function.*;
+// import java.util.regex.*;
+// import java.util.stream.*;
+// import static java.util.stream.Collectors.joining;
+// import static java.util.stream.Collectors.toList;
 
-public class Solution029{
+public class Solution029 {
     public static void main(String[] args) {
 
         int[][] array = new int[6][6];
@@ -29,7 +29,7 @@ public class Solution029{
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 int sum = sumHourglasses(array, i, j);
-                if (hourglasses < sum){
+                if (hourglasses < sum) {
                     hourglasses = sum;
                 }
             }
@@ -38,12 +38,6 @@ public class Solution029{
     }
 
     public static int sumHourglasses(int[][] array, int l, int r) {
-        int sum = 0;
-        for (int i = l; i < l+4; i++) {
-            for (int j = r; j < r+4; j++) {
-                sum += array[i][j];
-            }
-        }
-        return sum;
+        return array[l][r] + array[l][r+1] + array[l][r+2] + array[l+1][r+1] + array[l+2][r] + array[l+2][r+1] + array[l+2][r+2];
     }
 }
