@@ -1,0 +1,448 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution000",
+            "request": "launch",
+            "mainClass": "Solution000",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution001",
+            "request": "launch",
+            "mainClass": "Solution001",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution003",
+            "request": "launch",
+            "mainClass": "Solution003",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution004",
+            "request": "launch",
+            "mainClass": "Solution004",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution005",
+            "request": "launch",
+            "mainClass": "Solution005",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution006",
+            "request": "launch",
+            "mainClass": "Solution006",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution007",
+            "request": "launch",
+            "mainClass": "Solution007",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution009",
+            "request": "launch",
+            "mainClass": "Solution009",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution010",
+            "request": "launch",
+            "mainClass": "Solution010",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution011",
+            "request": "launch",
+            "mainClass": "Solution011",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution012",
+            "request": "launch",
+            "mainClass": "Solution012",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution013",
+            "request": "launch",
+            "mainClass": "Solution013",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution014",
+            "request": "launch",
+            "mainClass": "Solution014",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution015",
+            "request": "launch",
+            "mainClass": "Solution015",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution016",
+            "request": "launch",
+            "mainClass": "Solution016",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution017",
+            "request": "launch",
+            "mainClass": "Solution017",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution018",
+            "request": "launch",
+            "mainClass": "Solution018",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution019",
+            "request": "launch",
+            "mainClass": "Solution019",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution020",
+            "request": "launch",
+            "mainClass": "Solution020",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution021",
+            "request": "launch",
+            "mainClass": "Solution021",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution022",
+            "request": "launch",
+            "mainClass": "Solution022",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution023",
+            "request": "launch",
+            "mainClass": "Solution023",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution024",
+            "request": "launch",
+            "mainClass": "Solution024",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution025",
+            "request": "launch",
+            "mainClass": "Solution025",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution026",
+            "request": "launch",
+            "mainClass": "Solution026",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution027",
+            "request": "launch",
+            "mainClass": "Solution027",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution029",
+            "request": "launch",
+            "mainClass": "Solution029",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution030",
+            "request": "launch",
+            "mainClass": "Solution030",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution031",
+            "request": "launch",
+            "mainClass": "Solution031",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution032",
+            "request": "launch",
+            "mainClass": "Solution032",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution033",
+            "request": "launch",
+            "mainClass": "Solution033",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution034",
+            "request": "launch",
+            "mainClass": "Solution034",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution035",
+            "request": "launch",
+            "mainClass": "Solution035",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution036",
+            "request": "launch",
+            "mainClass": "Solution036",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution037",
+            "request": "launch",
+            "mainClass": "Solution037",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution038",
+            "request": "launch",
+            "mainClass": "Solution038",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution039",
+            "request": "launch",
+            "mainClass": "Solution039",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution040",
+            "request": "launch",
+            "mainClass": "Solution040",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution041",
+            "request": "launch",
+            "mainClass": "Solution041",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution042",
+            "request": "launch",
+            "mainClass": "Solution042",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution043",
+            "request": "launch",
+            "mainClass": "Solution043",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution044",
+            "request": "launch",
+            "mainClass": "Solution044",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution045",
+            "request": "launch",
+            "mainClass": "Solution045",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution046",
+            "request": "launch",
+            "mainClass": "Solution046",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution047",
+            "request": "launch",
+            "mainClass": "Solution047",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution048",
+            "request": "launch",
+            "mainClass": "Solution048",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution049",
+            "request": "launch",
+            "mainClass": "Solution049",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution050",
+            "request": "launch",
+            "mainClass": "Solution050",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution051",
+            "request": "launch",
+            "mainClass": "Solution051",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution052",
+            "request": "launch",
+            "mainClass": "Solution052",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution053",
+            "request": "launch",
+            "mainClass": "Solution053",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution054",
+            "request": "launch",
+            "mainClass": "Solution054",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution056",
+            "request": "launch",
+            "mainClass": "Solution056",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution057",
+            "request": "launch",
+            "mainClass": "Solution057",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution058",
+            "request": "launch",
+            "mainClass": "Solution058",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution059",
+            "request": "launch",
+            "mainClass": "Solution059",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution060",
+            "request": "launch",
+            "mainClass": "Solution060",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution061",
+            "request": "launch",
+            "mainClass": "Solution061",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution062",
+            "request": "launch",
+            "mainClass": "Solution062",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution063",
+            "request": "launch",
+            "mainClass": "Solution063",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        },
+        {
+            "type": "java",
+            "name": "Solution064",
+            "request": "launch",
+            "mainClass": "Solution064",
+            "projectName": "MyLearningOfJava_7cd4d4e5"
+        }
+    ]
+}
