@@ -1,4 +1,4 @@
-import java.io.*;
+// import java.io.*;
 import java.util.*;
 
 public class Solution033 {
@@ -14,20 +14,16 @@ public class Solution033 {
         int N = sc.nextInt();
         sc.nextLine();
         List<String> lArray = new ArrayList<String>(Arrays.asList(sc.nextLine().split(" ")));
+
         int Q = sc.nextInt();
         sc.nextLine();
-
         for(int i=0; i<Q; i++){
             String query = sc.nextLine();
             if(query.equals("Insert")){
                 String[] indexes = sc.nextLine().split(" ");
                 int ix = Integer.parseInt(indexes[0]);
                 String iy = indexes[1];
-                if(ix<N){
-                    lArray.add(ix, iy);
-                }else{
-                    lArray.add(iy);
-                }
+                lArray.add(ix, iy);
                 
             }else{
                 int dx = Integer.parseInt(sc.nextLine());
