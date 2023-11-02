@@ -1,52 +1,73 @@
 # Java BitSet - level: Easy, language: Java
-> Java BitSet in Hackerrank (https://www.hackerrank.com/challenges/java-datatypes/problem).
+> Java BitSet in Hackerrank (https://www.hackerrank.com/challenges/java-bitset/problem).
 
 
 ## Description of the problem
-We use the integers a, b, and  to create the following series:
-> (a + 2^0 * b), (a + 2^0 * b + 2^1 * b), … , s(a + 2^0 * b + 2^1 * b + … + 2^n-1 * b)
+Java's BitSet class implements a vector of bit values (i.e.: false (0) or true (1)) that grows as needed, allowing us to easily manipulate bits while optimizing space (when compared to other collections).
+Any element having a bit value of  is called a set bit.
 
-You are given q queries in the form of a, b, and n.
-For each query, print the series corresponding to the given a, b, and n values as a single line of  space-separated integers.
+Given 2 BitSets, B1 and B2, of size N where all bits in both BitSets are initialized to 0, perform a series of M operations.
+After each operation, print the number of set bits in the respective BitSets as two space-separated integers on a new line.
 
 ### Imput Format
-The first line contains an integer, q, denoting the number of queries.
-Each line i of the q subsequent lines contains three space-separated integers describing the respective ai, bi, and ni values for that query.
+The first line contains 2 space-separated integers, N (the length of both BitSets B1 and B2) and M (the number of operations to perform), respectively.
+The <> subsequent lines each contain an operation in one of the following forms:
+* AND <set> <set>
+* OR <set> <set>
+* XOR <set> <set>
+* FLIP <set> <index>
+* SET <set> <index>
+
+In the list above, <set> is the integer 1 or 2, where 1 denotes B1 and 2 denotes B2.
+<index> is an integer denoting a bit's index in the BitSet corresponding to <set>.
+
+For the binary operations AND, OR, and XOR, operands are read from left to right and the BitSet resulting from the operation replaces the contents of the first operand.
+For example:
+> AND 2 1
+
+B2 is the left operand, and B1 is the right operand.
+This operation should assign the result of B2 ∧ B1 to B2.
 
 ### Constraints
-* 0 ≦ q ≦ 500
-* 0 ≦ a, b ≦ 50
-* 1 ≦ n ≦ 15
+* 1 ≦ N ≦ 1000
+* 1 ≦ M ≦ 10000
 
 ### Output Format
-For each query, print the corresponding series on a new line. Each series must be printed in order as a single line of n space-separated integers.
+After each operation, print the respective number of set bits in BitSet B1 and BitSet B2 as 2 space-separated integers on a new line.
 
 ### Sample Input
-> 2
-> 0 2 10
-> 5 3 5
+> 5 4
+> AND 1 2
+> SET 1 4
+> FLIP 2 2
+> OR 2 1
 
 ### Sample Output
-> 2 6 14 30 62 126 254 510 1022 2046
-> 8 14 26 50 98
+> 0 0
+> 1 0
+> 1 1
+> 1 2
 
 ### Explanation
-We have two queries:
-1. We use a=0, b=2, and n=10 to produce some series:
-> s0, s1, … , sn-1:
-> * s0 = 0 + 1*2 = 2
-> * s1 = 0 + 1*2 + 2*2 = 6
-> * s2 = 2 + 1*2 + 2*2 + 4*2 = 14
+Initially: N=5, M=4, B1={0, 0, 0, 0, 0}, and B2={0, 0, 0, 0, 0}.
+At each step, we print the respective number of set bits in B1 and B2 as a pair of space-separated integers on a new line.
 
-… and so on.
-Once we hit n = 10, we print the first ten terms as a single line of space-separated integers.
+M0 = AND 1 2
+B1 = B1 ∧ B2 = {0, 0, 0, 0, 0} ∧ {0, 0, 0, 0, 0} = {0, 0, 0, 0, 0}
+B1={0, 0, 0, 0, 0}, B2={0, 0, 0, 0, 0}, 
+The number of set bits in B1 and B2 is 0.
 
-2. We use a=5, b=3, and n=5 to produce some series:
-> s0, s1, … , sn-1:
-> * s0 = 5 + 1*3 = 8
-> * s1 = 5 + 1*3 + 2*3 = 14
-> * s2 = 5 + 1*3 + 2*3 + 4*3 = 26
-> * s3 = 5 + 1*3 = 2*3 + 4*3 + 8*3 = 50
-> * s4 = 5 + 1*3 + 2*3 + 4*3 + 8*3 + 16*3 = 98
+M1 = SET 1 4
+Set B1[4] to true (1).
+B1={0, 0, 0, 0, 1}, B2={0, 0, 0, 0, 0}, 
+The number of set bits in B1 is 1 and B2 is 0.
 
-We then print each element of our series as a single line of space-separated values.
+M2 = FLIP 2 2
+Flip B2[2] from false (0) to true (1).
+B1={0, 0, 0, 0, 1}, B2={0, 0, 1, 0, 0}, 
+The number of set bits in B1 is 1 and B2 is 1.
+
+M3 = OR 2 1
+B2 = B2 ∨ B1 = {0, 0, 1, 0, 0} ∨ {0, 0, 0, 0, 1} = {0, 0, 1, 0, 1}.
+B1={0, 0, 0, 0, 1}, B2={0, 0, 1, 0, 1}, 
+The number of set bits in B1 is 1 and B2 is 2.

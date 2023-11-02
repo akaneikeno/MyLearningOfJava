@@ -1,52 +1,54 @@
 # Java Dequeue - level: Medium, language: Java
-> Java Dequeue in Hackerrank (https://www.hackerrank.com/challenges/java-datatypes/problem).
+> Java Dequeue in Hackerrank (https://www.hackerrank.com/challenges/java-dequeue/problem).
 
 
 ## Description of the problem
-We use the integers a, b, and  to create the following series:
-> (a + 2^0 * b), (a + 2^0 * b + 2^1 * b), … , s(a + 2^0 * b + 2^1 * b + … + 2^n-1 * b)
+In computer science, a double-ended queue (dequeue, often abbreviated to deque, pronounced deck) is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail).
 
-You are given q queries in the form of a, b, and n.
-For each query, print the series corresponding to the given a, b, and n values as a single line of  space-separated integers.
+Deque interfaces can be implemented using various types of collections such as LinkedList or ArrayDeque classes.
+For example, deque can be declared as:
+> Deque deque = new LinkedList<>();
+> or
+> Deque deque = new ArrayDeque<>();
+
+You can find more details about Deque here.
+
+In this problem, you are given N integers.
+You need to find the maximum number of unique integers among all the possible contiguous subarrays of size M.
+
+Note: Time limit is 3 second for this problem.
 
 ### Imput Format
-The first line contains an integer, q, denoting the number of queries.
-Each line i of the q subsequent lines contains three space-separated integers describing the respective ai, bi, and ni values for that query.
+The first line of input contains two integers N and M: representing the total number of integers and the size of the subarray, respectively.
+The next line contains N space separated integers.
 
 ### Constraints
-* 0 ≦ q ≦ 500
-* 0 ≦ a, b ≦ 50
-* 1 ≦ n ≦ 15
+* 1 ≦ N ≦ 100000
+* 1 ≦ M ≦ 100000
+* M ≦ N
+
+The numbers in the array will range between [0, 10000000].
 
 ### Output Format
-For each query, print the corresponding series on a new line. Each series must be printed in order as a single line of n space-separated integers.
+Print the maximum number of unique integers among all possible contiguous subarrays of size M.
 
 ### Sample Input
-> 2
-> 0 2 10
-> 5 3 5
+> 6 3
+> 5 3 5 2 3 2
 
 ### Sample Output
-> 2 6 14 30 62 126 254 510 1022 2046
-> 8 14 26 50 98
+> 3
 
 ### Explanation
-We have two queries:
-1. We use a=0, b=2, and n=10 to produce some series:
-> s0, s1, … , sn-1:
-> * s0 = 0 + 1*2 = 2
-> * s1 = 0 + 1*2 + 2*2 = 6
-> * s2 = 2 + 1*2 + 2*2 + 4*2 = 14
+In the sample testcase, there are 4 subarrays of contiguous numbers.
 
-… and so on.
-Once we hit n = 10, we print the first ten terms as a single line of space-separated integers.
+ s1 = <5, 3, 5> - Has 2 unique numbers.
 
-2. We use a=5, b=3, and n=5 to produce some series:
-> s0, s1, … , sn-1:
-> * s0 = 5 + 1*3 = 8
-> * s1 = 5 + 1*3 + 2*3 = 14
-> * s2 = 5 + 1*3 + 2*3 + 4*3 = 26
-> * s3 = 5 + 1*3 = 2*3 + 4*3 + 8*3 = 50
-> * s4 = 5 + 1*3 + 2*3 + 4*3 + 8*3 + 16*3 = 98
+ s2 = <3, 5, 2> - Has 3 unique numbers.
 
-We then print each element of our series as a single line of space-separated values.
+ s3 = <5, 2, 3> - Has 3 unique numbers.
+
+ s4 = <2, 3, 2> - Has 2 unique numbers.
+
+In these subarrays, there are 2, 3, 3, 2 unique numbers, respectively.
+The maximum amount of unique numbers among all possible contiguous subarrays is 3.
